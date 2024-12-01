@@ -1,0 +1,22 @@
+# この .gitignore ファイルは、Git に無視されるべきファイルやディレクトリを指定するために使用されます。
+# 以下のルールが適用されます：
+
+# Mac システムファイルを無視
+/.DS_Store
+
+# Python キャッシュディレクトリと Jupyter ノートブックファイルを無視
+__pycache__/
+*.ipynb
+
+# Visual Studio Code ワークスペースファイルを無視
+*.code-workspace
+
+# 仮想環境ディレクトリを無視
+.venv
+
+# ローカル設定ファイルを無視
+.hide/
+
+# requirements.txt を除くすべての .txt ファイルを無視
+.txt
+!requirements.txt
