@@ -6,7 +6,7 @@
 
 # Python キャッシュディレクトリと Jupyter ノートブックファイルを無視
 __pycache__/
-*.ipynb
+# *.ipynb
 
 # Visual Studio Code ワークスペースファイルを無視
 *.code-workspace
