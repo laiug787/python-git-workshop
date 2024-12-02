@@ -8,6 +8,34 @@ from mpl_toolkits.mplot3d import Axes3D
 x = np.linspace(0, 10, 100)
 y = np.sin(x)
 
+# -- フォント --
+plt.rcParams["font.family"] = "Arial"  # ["Arial", "Times New Roman", "Helvetica"]
+# -- 目盛り --
+plt.rcParams["xtick.labelsize"] = 20  # x軸の目盛りのフォントサイズ
+plt.rcParams["ytick.labelsize"] = 20  # y軸の目盛りのフォントサイズ
+plt.rcParams["xtick.direction"] = "in"
+plt.rcParams["ytick.direction"] = "in"
+plt.rcParams["xtick.major.width"] = 1.0
+plt.rcParams["ytick.major.width"] = 1.0
+plt.rcParams["xtick.minor.width"] = 1.0
+plt.rcParams["ytick.minor.width"] = 1.0
+plt.rcParams["xtick.top"] = True
+plt.rcParams["xtick.bottom"] = True
+plt.rcParams["ytick.left"] = True
+plt.rcParams["ytick.right"] = True
+# -- 軸ラベル --
+plt.rcParams["font.size"] = 24
+plt.rcParams["axes.linewidth"] = 1.0  # 軸の太さ
+# -- 凡例 --
+plt.rcParams["legend.frameon"] = True
+plt.rcParams["legend.fontsize"] = 18  # 凡例のラベルのフォントサイズ
+plt.rcParams["legend.title_fontsize"] = 18  # 凡例のタイトルのフォントサイズ
+plt.rcParams["legend.fancybox"] = False  # 丸角
+plt.rcParams["legend.edgecolor"] = "black"
+# -- サイズ --
+plt.rcParams["lines.markersize"] = 8  # マーカーサイズ
+plt.rcParams["figure.figsize"] = [16, 6]  # グラフのサイズを設定 (幅, 高さ)
+
 plt.figure(figsize=(10, 6), dpi=300)
 plt.plot(x, y, label="sin(x)")
 
